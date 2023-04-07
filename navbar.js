@@ -22,5 +22,5 @@ menu.addEventListener("click", () => {
 
 logo.style.cursor = "pointer";
 logo.addEventListener("click", () => {
-  location.href = "../../index.html";
+  location.href = "./index.html";
 });

@@ -8,14 +8,14 @@ form.addEventListener("submit", (event) => {
   if (userEmailExists(email.value)) {
     if (userPassCorrect(email.value, pass.value)) {
       localStorage.setItem("currentUser", email.value);
-      location.replace("../../shop.html ");
+      location.replace("./shop.html ");
     } else {
       alert("Please enter the correct password!!!");
       form.reset();
     }
   } else {
     alert("Email-id does not exist.\nPlease sign-up with us!!!");
-    location.href = "../../index.html";
+    location.href = "./index.html";
   }
 });
 

@@ -10,7 +10,7 @@ if (localStorage.getItem("currentUser") !== null) {
     let profile = document.querySelector(".userTag");
     profile.style.cursor = "pointer";
     profile.addEventListener("click", () => {
-      location.href = "../../profile.html";
+      location.href = "./profile.html";
     });
 
     let links = document.querySelector("#links");
@@ -28,7 +28,7 @@ if (localStorage.getItem("currentUser") !== null) {
     logout.style.cursor = "pointer";
     logout.addEventListener("click", () => {
       localStorage.removeItem("currentUser");
-      location.href = "../../index.html";
+      location.href = "./index.html";
     });
 
     itemPreviewPrinter();
@@ -49,7 +49,7 @@ if (localStorage.getItem("currentUser") !== null) {
         },
         image: "https://cdn-icons-png.flaticon.com/128/891/891419.png",
         handler: function () {
-          location.href = "../../shop.html";
+          location.href = "./shop.html";
         },
         options: {
           checkout: {
@@ -68,10 +68,10 @@ if (localStorage.getItem("currentUser") !== null) {
       localStorage.removeItem("cart");
     });
   } else {
-    location.href = "../../shop.html";
+    location.href = "./shop.html";
   }
 } else {
-  location.href = "../../index.html";
+  location.href = "./index.html";
 }
 
 function itemPreviewPrinter() {
@@ -243,6 +243,6 @@ function removeFromCart(prod) {
   inrPayment = Number.parseInt(totalPrinter());
 
   if (JSON.parse(localStorage.getItem("cart")).length == 0) {
-    location.href = "../../shop.html";
+    location.href = "./shop.html";
   }
 }

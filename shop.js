@@ -8,14 +8,14 @@ if (localStorage.getItem("currentUser") !== null) {
   logout.style.cursor = "pointer";
   logout.addEventListener("click", () => {
     localStorage.removeItem("currentUser");
-    location.href = "../../index.html";
+    location.href = "./index.html";
   });
 
   // event listener for the profile button which will redirect the user to profile page
   let profile = document.querySelector(".userTag");
   profile.style.cursor = "pointer";
   profile.addEventListener("click", () => {
-    location.href = "../../profile.html";
+    location.href = "./profile.html";
   });
 
   // Code to display the current user name on navbar
@@ -590,7 +590,7 @@ if (localStorage.getItem("currentUser") !== null) {
     }
   }
 } else {
-  location.href = "../../index.html";
+  location.href = "./index.html";
 }
 
 // function to fetch the products from fake store api

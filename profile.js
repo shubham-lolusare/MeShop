@@ -3,7 +3,7 @@ if (localStorage.getItem("currentUser") !== null) {
   logout.style.cursor = "pointer";
   logout.addEventListener("click", () => {
     localStorage.removeItem("currentUser");
-    location.href = "../../index.html";
+    location.href = "./index.html";
   });
 
   let form = document.querySelector(".form");
@@ -105,5 +105,5 @@ if (localStorage.getItem("currentUser") !== null) {
     }
   });
 } else {
-  location.href = "../../index.html";
+  location.href = "./index.html";
 }

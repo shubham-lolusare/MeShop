@@ -32,7 +32,7 @@ body {
 }
 
 .imgDiv {
-  background-image: url("../../images/landingPagePic.png");
+  background-image: url("./images/landingPagePic.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

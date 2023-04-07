@@ -9,9 +9,9 @@ let emailArray = [];
 
 let navLogin = document.querySelector("#login > a");
 if (localStorage.length != 0) {
-  navLogin.setAttribute("href", "../../login.html");
+  navLogin.setAttribute("href", "./login.html");
 } else {
-  navLogin.setAttribute("href", "../../signup.html");
+  navLogin.setAttribute("href", "./signup.html");
 }
 
 // Event listener for the form on submit
@@ -32,7 +32,7 @@ form.addEventListener("submit", (event) => {
       localStorage.setItem("userEmails", JSON.stringify(emailArray));
 
       alert("Your account has been added");
-      location.href = "../../login.html";
+      location.href = "./login.html";
     } else {
       if (!userExists(email.value)) {
         let tempArr = JSON.parse(localStorage.getItem("usersData"));
@@ -44,7 +44,7 @@ form.addEventListener("submit", (event) => {
         localStorage.setItem("userEmails", JSON.stringify(emArray));
 
         alert("Your account has been added");
-        location.href = "../../login.html";
+        location.href = "./login.html";
       } else {
         alert(`User with Email-id : ${email.value} already exists!`);
         form.reset();

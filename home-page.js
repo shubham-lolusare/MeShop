@@ -9,25 +9,25 @@ if (localStorage.getItem("currentUser") === null) {
   loginButton.style.cursor = "pointer";
   loginButton.addEventListener("click", () => {
     if (localStorage.length != 0) {
-      location.href = "../../login.html";
+      location.href = "./login.html";
     } else {
-      location.href = "../../signup.html";
+      location.href = "./signup.html";
     }
   });
 
   // Same for the nav bar login button
   let navLogin = document.querySelector("#login > a");
   if (localStorage.length != 0) {
-    navLogin.setAttribute("href", "../../login.html");
+    navLogin.setAttribute("href", "./login.html");
   } else {
-    navLogin.setAttribute("href", "../../signup.html");
+    navLogin.setAttribute("href", "./signup.html");
   }
 
   // Event listener for signup button
   let signupButton = document.querySelector("#signup-button");
   signupButton.style.cursor = "pointer";
   signupButton.addEventListener("click", () => {
-    location.href = "../../signup.html";
+    location.href = "./signup.html";
   });
 
   // Fetching data for the demo product of the landing page
@@ -59,5 +59,5 @@ if (localStorage.getItem("currentUser") === null) {
       location.reload();
     });
 } else {
-  location.href = "../../shop.html";
+  location.href = "./shop.html";
 }
