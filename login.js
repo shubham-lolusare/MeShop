@@ -30,13 +30,16 @@ form.addEventListener("click", () => {
 function userEmailExists(email) {
   let tempEmail = JSON.parse(localStorage.getItem("userEmails"));
 
-  for (let x of tempEmail) {
-    if (x === email) {
-      return true;
+  if (tempEmail != null) {
+    for (let x of tempEmail) {
+      console.log(x);
+      if (x === email) {
+        return true;
+      }
     }
+  } else {
+    return false;
   }
-
-  return false;
 }
 
 // function to check id the eneterd passwrod for the given email is correct
