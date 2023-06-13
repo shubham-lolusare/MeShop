@@ -60,13 +60,15 @@ form.addEventListener("submit", (event) => {
 function userExists(email) {
   let tempEmail = JSON.parse(localStorage.getItem("userEmails"));
 
-  for (let x of tempEmail) {
-    if (x === email) {
-      return true;
+  if (tempEmail != null) {
+    for (let x of tempEmail) {
+      if (x === email) {
+        return true;
+      }
     }
+  } else {
+    return false;
   }
-
-  return false;
 }
 
 // event listener to hide the navabr if the user click the form and navbar is opened
