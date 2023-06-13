@@ -9,6 +9,7 @@ body {
   height: 100vh;
   margin: 0px;
   background-color: #f4ebd0;
+  user-select: none;
 }
 
 .text-style {
@@ -75,6 +76,7 @@ body {
   background-color: #122620;
   color: white;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px), (max-height: 700px) {

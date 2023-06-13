@@ -8,6 +8,7 @@ body {
   height: 100vh;
   margin: 0px;
   background-color: #f4ebd0;
+  user-select: none;
 }
 
 .text-style {
